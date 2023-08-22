@@ -54,13 +54,13 @@ export default class Register {
 
             
             try {
-                await createUser(email, password); // Create user with email and password
+                await createUser(email, password); 
               
                 registerScherm.classList.add('hide');
                 ToDoScherm.classList.remove('hide');
             } catch (error) {
                 console.error('Error creating user:', error);
-                // Handle error (display error message, etc.)
+             
             }
         });
 

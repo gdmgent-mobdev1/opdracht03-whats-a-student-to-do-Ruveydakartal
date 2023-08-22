@@ -86,7 +86,7 @@ console.log(todoListId, attribute, value);
 if (attribute === 'elapsedTime') {
   // Handle updating elapsed time specifically
   const answer = await setDoc(doc(fireStoreDb, `lists/${todoListId}`), {
-    elapsedTime: value // Update the elapsed time attribute
+    elapsedTime: value 
   }, { merge: true });
 }
 }

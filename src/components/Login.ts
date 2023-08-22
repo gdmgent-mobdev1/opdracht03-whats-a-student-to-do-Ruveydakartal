@@ -60,13 +60,13 @@ export default class LoginScherm {
 
             
             try {
-                await signIn(email, password); // Create user with email and password
+                await signIn(email, password); 
               
                 loginScherm.classList.add('hide');
                 ToDoScherm.classList.remove('hide');
             } catch (error) {
                 console.error('Error creating user:', error);
-                // Handle error (display error message, etc.)
+                
             }
         });
 

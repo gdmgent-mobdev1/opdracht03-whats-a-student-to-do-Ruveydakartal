@@ -42,9 +42,9 @@ export default class Card {
 
   parentId: string;
 
-  deadlineElement?: HTMLParagraphElement; // Add this line
+  deadlineElement?: HTMLParagraphElement; 
 
-  deadlineInput?: HTMLInputElement ; // Add this line
+  deadlineInput?: HTMLInputElement ; 
 
   static editableTextMap: Record<string, EditableText> = {};
 
@@ -83,8 +83,8 @@ export default class Card {
     this.p = document.createElement('p');
     this.p.innerText = this.state.title;
 
-    this.deadlineElement = document.createElement('p'); // Add this line
-    this.deadlineElement.innerText = `Deadline: ${this.state.deadline}`; // Add this line
+    this.deadlineElement = document.createElement('p'); 
+    this.deadlineElement.innerText = `Deadline: ${this.state.deadline}`; 
 
     this.deleteButton = document.createElement('button');
     this.deleteButton.classList.add('delete-btn')
@@ -97,7 +97,7 @@ export default class Card {
  
 
     this.card.append(this.p);
-    this.card.append(this.deadlineElement); // Add this line
+    this.card.append(this.deadlineElement); 
     this.card.append(this.deleteButton);
 
     this.place.append(this.card);

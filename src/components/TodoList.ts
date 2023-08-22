@@ -76,7 +76,7 @@ export default class TodoList {
 
   async render(): Promise<void> {
     this.createToDoListElement();
-    await this.initTimer(); // Initialize the timer first
+    await this.initTimer(); 
     if (this.todoListElement instanceof HTMLElement) {
       this.todoListElement.addEventListener('drop', dropHandler);
       this.todoListElement.addEventListener('dragover', dragoverHandler);

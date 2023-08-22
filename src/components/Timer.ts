@@ -52,10 +52,9 @@ export default class Timer {
     stopTimer() {
         clearInterval(this.timerInterval);
 
-        // Calculate the elapsed time and convert it to the desired format
+ 
          const formattedElapsedTime = this.formatTime(this.elapsedTime);
-        // Update the Firebase entry with the elapsed time
-        // Pass the appropriate arguments (todoListId, cardId, attribute, value)
+      
         updateTimeFirebase(this.todoListId, 'elapsedTime', formattedElapsedTime);
         
       }

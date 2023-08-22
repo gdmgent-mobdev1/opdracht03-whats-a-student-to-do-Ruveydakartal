@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     isLoggedOut = true;
   };
 
-  let currentUserId : any = null; // Declare currentUserId at an outer scope
+  let currentUserId : any = null; 
 
   const colRef = collection(fireStoreDb, 'lists');
 
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Retrieve all cards from Firestore
             const allCards = await getAllCards(id);
             console.log(allCards)
-            // Iterate over allCards and find the corresponding TodoList
+           
             allCards.forEach((card) => {
               new Card(
                 card.title,
@@ -122,8 +122,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 card.id,
                 id,
                 card.deadline,
-                card.description, // Add this line
-                card.comments, // Add this line
+                card.description, 
+                card.comments, 
               );
               
             });
