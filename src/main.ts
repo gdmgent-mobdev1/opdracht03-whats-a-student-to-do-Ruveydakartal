@@ -1,5 +1,5 @@
 import { Card, TodoList } from './components';
-import { State, root } from './Lib';
+import { State, root } from './lib';
 import LoginScherm from "./components/Login";
 import Register from "./components/Register";
 import { getAllCards, signOutUser } from "./lib/firebase-init";
@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
       logOutButton.removeEventListener('click', handleLogoutClick);
       isLoggedOut = true;
     }
-    const registerScherm = new Register();
-    const loginScherm = new LoginScherm();
+    new Register();
+    new LoginScherm();
 
   };
 

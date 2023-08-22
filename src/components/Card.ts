@@ -33,7 +33,7 @@ export default class Card {
 
   commentsButton?: HTMLButtonElement ;
 
-  menuComments?: HTMLDivElement ;
+  menuComments?: HTMLDivElement;
 
   editableDescription?: EditableText ;
 
