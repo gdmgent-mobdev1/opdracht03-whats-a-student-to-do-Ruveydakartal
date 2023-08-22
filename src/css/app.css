@@ -1,0 +1,165 @@
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--body-background-color);
+    color: var(--primary-text-color);
+    padding: 0;
+    margin: 0;
+    font-family: 'Anek Devanagari', sans-serif;
+
+}
+
+
+.LoginScherm{
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    width: 50%;
+}
+
+h2{
+    margin-bottom: -15px;
+    color: var(--donkerblauw);
+    font-weight: 700;
+    font-size: 40px;
+
+}
+
+form p {
+    margin-bottom: 30px;
+}
+
+.subtext{
+    color: var(--donkerblauw);
+    font-weight: 300;
+    margin: 15px auto ;
+    font-size: 15px;
+}
+
+.signup {
+display: flex;
+flex-direction: column;
+
+}
+
+.btn{
+    line-height: 30px;
+    margin: 5px;
+    border: 1px solid var(--lichtblauw);
+    font-weight: 700;
+    border-radius: 5px;
+    color: var(--donkerblauw);
+    outline: none;
+    background-color: var(--lichtblauw);
+
+}
+
+.btn text {
+ align-items: center;
+}
+
+.login{
+    display: flex;
+flex-direction: column;
+}
+
+.hide{
+    display: none;
+}
+
+input{
+    border: 1px solid var(--lichtblauw);
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px 0px;
+
+
+}
+
+.OtherLogin{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 30px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.OtherLogin img {
+    height: 20px;
+    width: 20px;
+   
+}
+
+.btn-icon {
+    border: none;
+    background-color: var(--body-background-color);
+    margin-top: 10px;
+}
+
+.chat{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.top{
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:4.5rem;
+    position: relative;
+    display: flex;
+    background-color: var(--donkerblauw);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top h2{
+    color: var(--lichtblauw);
+    margin-top: 0;
+}
+
+.leftside {
+    background-color: #eff2f4;
+    height: 90%;
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.leftside .joinchat{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.rightside{
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  
+}
+
+.sendMessage{
+    background-color: var(--lichtblauw);
+    justify-content: flex-end;
+    align-items: center;
+    
+    
+}
+
+.sendMessage input{
+    width: 80%;
+}
+
